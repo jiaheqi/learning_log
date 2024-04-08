@@ -1,0 +1,17 @@
+  {% extends "learning_logs/base.html" %}
+
+ {% block page_header %}
+<!--  jumbotron元素是一个大框，在页面中显得鹤立鸡群。它可以包含任何东西，通常用于在主页中呈现简要的项目描述和让用户行动起来的元素-->
+   <div class="jumbotron">
+     <h1 class="display-3">Track your learning.</h1>
+
+     <p class="lead">Make your own Learning Log,and keep a list of the
+          topics you're learning about.Whenever you learn something new
+          about a topic,make an entry summarizing what you've learned.</p>
+<!--通过创建一个按钮（而不是文本链接）邀请用户注册账户-->
+     <a class="btn btn-lg btn-primary" href="{% url 'users:register'%}"
+
+          role="button">Register & raquo;</a>
+       <!--代码&raquo;是一个HTML实体，表示两个右尖括号(>>),但是好像不起作用-->
+    </div>
+ {% endblock page_header %}
